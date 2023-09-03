@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127166764670",
+    "project_id": "recipeapplive",
+    "storage_bucket": "recipeapplive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127166764670:android:fae6c305cbefa8450c2a2f",
+        "android_client_info": {
+          "package_name": "com.example.recipeapplive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127166764670-n1sgeg08950qaara57r8q5md2fsmfi56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBteYTkD5eWiEPKcH5tguiPRH-LKnDoDdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127166764670-n1sgeg08950qaara57r8q5md2fsmfi56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
