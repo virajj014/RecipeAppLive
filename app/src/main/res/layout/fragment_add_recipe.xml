@@ -1,17 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/white"
     tools:context=".Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_gravity="center"
-        android:text="Add Recipe Fragment" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:orientation="vertical"
+       android:padding="16dp"
+       android:gravity="center"
+       >
+       <TextView
+           android:id="@+id/textViewRecipe"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add New Recipe"
+           android:textSize="24sp"
+
+           android:textColor="@color/green"
+           android:layout_gravity="center"
+         />
+
+       <ImageView
+           android:id="@+id/imageViewRecipe"
+           android:layout_width="wrap_content"
+           android:layout_height="100dp"
+           android:src="@drawable/noimage"
+           android:layout_marginTop="16dp" />
+
+
+       <com.google.android.material.button.MaterialButton
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:text="Select New Image"
+           android:id="@+id/buttonSelectImage"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           app:strokeColor="@color/green"
+           android:textColor="@color/green"
+           />
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/recipeNameLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Recipe Name"
+           android:layout_margin="5dp"
+           app:boxStrokeColor="@color/yellow"
+           app:hintTextColor="@color/yellow">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/editTextRecipeName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/ingredientsLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Ingredients"
+           android:layout_margin="5dp"
+           app:boxStrokeColor="@color/yellow"
+           app:hintTextColor="@color/yellow">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/editTextIngredients"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textMultiLine"
+               android:minLines="3"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/instructionsLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Instructions"
+           android:layout_margin="5dp"
+           app:boxStrokeColor="@color/yellow"
+           app:hintTextColor="@color/yellow">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/editTextInstructions"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textMultiLine"
+               android:minLines="5"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/saveRecipeButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:background="@color/green"
+           android:text="Save"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+        />
+   </LinearLayout>
 
 </FrameLayout>
